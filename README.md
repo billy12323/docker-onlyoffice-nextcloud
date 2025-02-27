@@ -1,3 +1,6 @@
+## 本项目可运行next-cloud 30 + onlyoffice server 版本
+本版本仅支持http，不支持https，如需https请使用master分之，注意修改相关配置
+
 ## Document Server and Nextcloud Docker installation
 
 Document Server (distributed as ONLYOFFICE Docs starting from v.6.0) and Nextcloud Docker installation will install the preconfigured version of [ONLYOFFICE Document Server][2] connected to Nextcloud to your server running them in Docker containers.

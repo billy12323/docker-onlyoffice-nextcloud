@@ -14,6 +14,8 @@ if ! grep -q "nextcloud-nginx" trusted_domain.tmp; then
     docker exec -u www-data nextcloud-app php occ --no-warnings config:system:set trusted_domains $TRUSTED_INDEX --value="nextcloud-nginx"
 fi
 
+# 如果有更多其他的域名需要开放，在上面增加同类命令即可，修改 nextcloud-nginx = 域名
+
 rm trusted_domain.tmp
 
 docker exec -u www-data nextcloud-app php occ --no-warnings app:install onlyoffice
